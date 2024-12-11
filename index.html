@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style></style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorteador de números</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <header>
+        <img src="./assets/logo.svg" alt="" />
+        <span class="logo-title">NUMBERS</span>
+      </header>
+
+      <div class="container-hero">
+        <div class="content">
+          <div class="content-titles">
+            <span>Online - gratuito</span>
+            <h1>SORTEADOR DE NÚMEROS</h1>
+          </div>
+
+          <div class="information">
+            <div class="how-works-description">
+              <img src="./assets/instructions.svg" alt="" />
+
+              <div class="instructions">
+                <p class="headline">Como funciona o sorteador de números?</p>
+                <p class="description">
+                  O sorteador utiliza um algoritmo de geração aleatória para
+                  criar números dentro do intervalo especificado pelo usuário.
+                </p>
+              </div>
+            </div>
+
+            <div class="how-works-description">
+              <img src="./assets/instructions.svg" alt="" />
+
+              <div class="instructions">
+                <p class="headline">Posso escolher o intervalo dos números?</p>
+                <p class="description">
+                  Sim, você pode definir os valores mínimo e máximo para o
+                  intervalo dos números sorteados.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-form">
+          <div class="content-title-form">
+            <div class="headerline">
+              <h3>QUERO SORTEAR:</h3>
+              <p>
+                defina o intervalo e a quantidade de números, clique em
+                "Sortear" e veja os resultados na tela. É rápido e fácil!
+              </p>
+            </div>
+          </div>
+
+          <div class="container-form">
+            <form action="">
+              <div class="field-container">
+                <div class="field-content">
+                  <label 
+                  for="amount">
+                  NÚMEROS
+                </label>
+                  <input 
+                  id="amount" 
+                  type="number"
+                  name="" />
+                </div>
+                <!--  -->
+                <div class="field-content">
+                  <label for="from">DE</label>
+                  <input 
+                  id="from" 
+                  type="number" 
+                  name="" />
+                </div>
+                <!--  -->
+                <div class="field-content">
+                  <label 
+                  for="to">
+                  ATÉ
+                </label>
+                  <input 
+                  id="to" 
+                  type="number" 
+                  name="" />
+                </div>
+              </div>
+              <!-- Fechando a div.field-container -->
+
+              <!--  -->
+              <button
+              onclick="drawNumbers()"
+              class="draw-button" 
+              type="submit">
+                SORTEAR
+                <img src="./assets/arrow.svg" alt="" />
+              </button>
+            </form>
+          </div>
+          <div class="container-result">
+            <h3>RESULTADO DO SORTEIO</h3>
+            <p>1º resultado</p>
+          
+          <div class="result">
+            <!-- <span class="result-value">23</span> -->
+          
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
